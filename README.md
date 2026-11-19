@@ -2,6 +2,13 @@
 
 GoWay is a Go gateway for provider accounts behind LiteLLM. This starter serves a single mock model, `goway-demo`, for checking the HTTP and SSE contract before connecting a real provider.
 
+## Project documentation
+
+- [Planning Kit](docs/README.md) covers the project scope, G0–G5 roadmap, OAuth research, and acceptance criteria.
+- [Roadmap PDF](docs/OmniRoute-Go-Roadmap.pdf) contains the original planning report.
+
+## Quick start
+
 ```sh
 export GOWAY_API_KEY="$(openssl rand -hex 32)"
 go run ./cmd/gateway
