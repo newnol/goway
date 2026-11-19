@@ -4,6 +4,7 @@ Bộ kế hoạch ngày 19/11/2026 cho dự án Omniroute Fork. Mục tiêu là 
 
 | Khi cần | Đọc |
 |---|---|
+| Xem kết quả G0 và điều kiện còn thiếu | [Baseline và provider pilot](00-g0-baseline.md) |
 | Xác định phạm vi, trạng thái upstream và phần kế thừa từ fork | [Phạm vi và điểm xuất phát](01-pham-vi.md) |
 | Chốt lịch, phụ thuộc và người duyệt | [Roadmap G0–G5](02-roadmap.md) |
 | Chọn provider thử nghiệm và biết cần đọc gì trong source | [Ma trận tương thích OAuth](03-oauth-matrix.md) |

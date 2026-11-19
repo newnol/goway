@@ -4,7 +4,7 @@
 
 | Mốc | Khi nào · phụ thuộc | Bàn giao | Điều kiện đóng |
 |---|---|---|---|
-| **G0 · Chốt baseline** | Bắt đầu ngay | SHA nguồn, kết quả base CI, ma trận OAuth, quyết định chọn provider pilot | Queue hết base-red và các check bắt buộc đạt trên cùng SHA. Có cách đăng ký client, tài khoản và đường inference được provider hỗ trợ cho pilot. |
+| **G0 · Chốt baseline** | [Đang chờ CI và xác nhận tài khoản pilot](00-g0-baseline.md) | SHA nguồn, kết quả base CI, ma trận OAuth, quyết định chọn provider pilot | Queue hết base-red và các check bắt buộc đạt trên cùng SHA. Có cách đăng ký client, tài khoản và đường inference được provider hỗ trợ cho pilot. |
 | **G1 · Nối LiteLLM** | Tuần 1 · G0 | Một alias thử nghiệm, gateway Go, upstream giả lập, cấu hình provider/model mẫu | Qua LiteLLM, request thường và SSE đều đúng contract. Cấu hình sai bị từ chối và cấu hình đang chạy vẫn dùng được. |
 | **G2 · Một account OAuth** | Tuần 2–3 · G1 | Đăng nhập, lưu phiên, refresh, báo cần đăng nhập lại. Một lệnh chat qua provider pilot | Bài test refresh đồng thời đạt. Restart giữ được phiên. Có bằng chứng một lượt đăng nhập và một request inference thật đã che dữ liệu nhạy cảm. |
 | **G3 · Quota và cooldown** | Tuần 4 · G2 | Hiển thị nguồn quota, thời điểm quan sát/reset và lý do tạm dừng, theo đúng account/model hay nhóm quota | 429 có Retry-After chặn dispatch đúng phạm vi. Dữ liệu thiếu hiện unknown. Khi mọi account đều bị chặn, số lần gọi upstream bằng 0. |

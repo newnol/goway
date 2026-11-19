@@ -12,6 +12,8 @@
 
 ## Quyết định provider pilot
 
+Xem [kết quả G0](00-g0-baseline.md) để biết phương án Sign in with ChatGPT và điều kiện còn thiếu trước khi chốt.
+
 Ưu tiên khảo sát Codex trước nếu Tài có account phù hợp. Chọn ứng viên đầu tiên có hướng dẫn chính thức cho trường hợp sử dụng này, có cách đăng ký hoặc dùng client hợp lệ và có một model test. Ghi link tài liệu, điều kiện tài khoản, phạm vi quyền và người xác nhận. Nếu cả năm còn thiếu căn cứ, giữ lựa chọn ở trạng thái mở. Mỗi provider bổ sung sau pilot phải qua cùng bộ contract test.
 
 ## Hồ sơ source cần chốt ở G0

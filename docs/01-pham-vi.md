@@ -13,6 +13,8 @@
 
 ## Trạng thái đối chiếu ngày 19/11/2026
 
+Các dòng dưới ghi lại thời điểm lập kế hoạch. Xem [lần kiểm tra G0 sau đó](00-g0-baseline.md) để biết SHA mới, tình trạng CI và phương án pilot.
+
 - **Upstream dùng để đọc source** là nhánh `release/v3.8.55`, phiên bản trong `package.json` là `3.8.55`, SHA `cc59ad70b2e9a343f26860e0e040281cb433a37a`. [Commit](https://github.com/cheaper-inference/OmniRoute/commit/cc59ad70b2e9a343f26860e0e040281cb433a37a) · [package.json](https://github.com/cheaper-inference/OmniRoute/blob/cc59ad70b2e9a343f26860e0e040281cb433a37a/package.json)
 - **G0 đang chờ CI.** Queue báo dừng lúc 16:16 giờ Việt Nam do `base-red` trên chính SHA này. Lần kiểm tra base ghi nhận lỗi ở Unit Tests (6/8). Khi đầu nhánh đổi, lưu SHA mới và kết quả các check bắt buộc trước khi chọn làm baseline. [Queue #20583](https://github.com/cheaper-inference/OmniRoute/issues/20583) · [Base check](https://github.com/cheaper-inference/OmniRoute/actions/runs/44494913411)
 - **Fork TypeScript.** PR #2 (audit) và #3 (quy tắc lifecycle) đã merge. PR #4 (lưu policy bằng SQLite và kiểm soát cập nhật đồng thời) đang mở. Có thể tái dùng các tình huống kiểm thử của fork làm đầu vào thiết kế Go. [#2](https://github.com/newnol/OmniRoute/pull/2) · [#3](https://github.com/newnol/OmniRoute/pull/3) · [#4](https://github.com/newnol/OmniRoute/pull/4)
