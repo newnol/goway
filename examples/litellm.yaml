@@ -1,0 +1,6 @@
+model_list:
+  - model_name: goway-demo
+    litellm_params:
+      model: openai/goway-demo
+      api_base: os.environ/GOWAY_API_BASE
+      api_key: os.environ/GOWAY_API_KEY
